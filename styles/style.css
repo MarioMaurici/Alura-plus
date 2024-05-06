@@ -16,6 +16,7 @@
     --blue-button: #167bf7;
     --background-color: #00030c;
     --principal-font: "Inter", sans-serif;
+    --blue-button-efeito: #7da9de;
 }
 
 body{
@@ -130,7 +131,7 @@ body{
     align-items: center;
     text-align: center;
     gap: 2em;
-    padding:6em;
+    padding:6em 3em 0 3em;
 }
 
 .rodape__logo{
@@ -139,7 +140,7 @@ body{
 
 .rodape__lista{
     display: flex;
-    gap: 1em;
+    gap: 1.8em;
     justify-content: space-evenly;
     list-style-type: none;
 }
@@ -153,3 +154,18 @@ body{
     font-size: 14px;
     color: var(--principal-gray);
 }
+
+.lista__link a:hover{
+    color: var(--blue-button);
+}
+
+.lista__link a:active{
+    color: darkblue;
+}
+
+.blue__button:hover{
+    color: var(--background-color);
+    background-color: var(--blue-button-efeito);
+}
+
+
